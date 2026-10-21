@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+  <title>Clean Living Services — full logo</title>
+  <desc>Forest-green house roof with chimney and four-pane window, sage swoosh and sparkle, brand name and tagline on a transparent background.</desc>
+  <g stroke="#173F35" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M340 300 L600 115 L860 300"/>
+    <path d="M760 230 L760 125 L815 125 L815 268" stroke-width="22"/>
+  </g>
+  <g fill="#173F35">
+    <rect x="548" y="225" width="35" height="35" rx="5"/>
+    <rect x="594" y="225" width="35" height="35" rx="5"/>
+    <rect x="548" y="270" width="35" height="35" rx="5"/>
+    <rect x="594" y="270" width="35" height="35" rx="5"/>
+  </g>
+  <path d="M250 405 C390 315 540 350 680 385 C765 407 835 410 900 386 C820 438 700 417 590 393 C450 364 345 375 250 405 Z" fill="#7B927F"/>
+  <path d="M965 270 C982 270 988 245 994 216 C1000 245 1006 270 1024 270 C1006 276 1000 299 994 326 C988 299 982 276 965 270 Z" fill="#7B927F"/>
+  <text x="800" y="590" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="104" font-weight="700" letter-spacing="4" fill="#173F35">CLEAN LIVING</text>
+  <text x="800" y="690" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="57" font-weight="500" letter-spacing="22" fill="#7B927F">SERVICES</text>
+  <text x="800" y="775" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="39" font-weight="400" fill="#243E38">A cleaner home. A better everyday.</text>
+</svg>

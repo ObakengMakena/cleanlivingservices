@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <title>Clean Living Services — icon</title>
+  <g stroke="#173F35" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M160 320 L450 105 L740 320"/>
+    <path d="M610 225 L610 115 L670 115 L670 270" stroke-width="25"/>
+  </g>
+  <g fill="#173F35">
+    <rect x="410" y="240" width="42" height="42" rx="5"/>
+    <rect x="464" y="240" width="42" height="42" rx="5"/>
+    <rect x="410" y="294" width="42" height="42" rx="5"/>
+    <rect x="464" y="294" width="42" height="42" rx="5"/>
+  </g>
+  <path d="M100 440 C260 335 420 380 560 415 C640 435 710 440 790 408 C700 465 585 447 470 422 C330 390 205 410 100 440 Z" fill="#7B927F"/>
+  <path d="M770 290 C788 290 795 265 802 235 C809 265 816 290 834 290 C816 297 809 322 802 352 C795 322 788 297 770 290 Z" fill="#7B927F"/>
+</svg>

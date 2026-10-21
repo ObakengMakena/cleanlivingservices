@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#173F35">
+<link rel="icon" type="image/svg+xml" href="/images/logo-icon.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Clean Living Services | Residential cleaning in Cape Town">
+<meta property="og:description" content="A cleaner home. A better everyday. Home cleaning in Cape Town from R450. WhatsApp 072 975 2801 for a quote.">
+<!-- Link preview: if your web address is different, replace clean-living-services.pages.dev in the 3 lines below -->
+<meta property="og:url" content="https://clean-living-services.pages.dev/">
+<meta property="og:site_name" content="Clean Living Services">
+<meta property="og:image" content="https://clean-living-services.pages.dev/images/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clean Living Services logo: A cleaner home. A better everyday.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://clean-living-services.pages.dev/images/share.png">
+<title>Clean Living Services | Residential Cleaning in Cape Town</title>
+<meta name="description" content="Residential cleaning in Cape Town from R450. A cleaner home. A better everyday. WhatsApp 072 975 2801 for a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,600;9..40,700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: clean, white, photo-led one-pager. Green lives only in the logo, buttons and small accents. Single light look by brand choice. */
+:root {
+  --brand: #173F35;
+  --brand-hover: #0f2e26;
+  --sage: #7B927F;
+  --ink: #1C2421;
+  --text: #4A524E;
+  --muted: #737B77;
+  --bg: #FFFFFF;
+  --surface: #F6F7F5;
+  --line: #E4E7E3;
+  --display: "DM Sans", "Segoe UI", system-ui, sans-serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --r: 12px;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+body { background: var(--bg); color: var(--text); font-family: var(--body); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+h1, h2, h3 { font-family: var(--display); color: var(--ink); line-height: 1.15; margin: 0; text-wrap: balance; letter-spacing: -0.015em; }
+h1 { font-size: clamp(2.2rem, 5.2vw, 3.5rem); font-weight: 700; letter-spacing: -0.03em; }
+h2 { font-size: clamp(1.65rem, 3.2vw, 2.25rem); font-weight: 700; letter-spacing: -0.02em; }
+h3 { font-size: 1.1rem; font-weight: 600; }
+p { margin: 0; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; border-radius: 4px; }
+
+.wrap { max-width: 1160px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+.eyebrow { font-family: var(--display); font-size: .76rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--sage); }
+.lede { font-size: 1.06rem; max-width: 58ch; }
+section { padding-block: clamp(64px, 8vw, 104px); }
+.alt { background: var(--surface); border-block: 1px solid var(--line); }
+.section-head { display: grid; gap: 12px; margin-bottom: 44px; max-width: 620px; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-family: var(--display); font-weight: 600; font-size: .98rem; padding: 13px 22px; border-radius: 8px; text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: background .2s, color .2s, border-color .2s; white-space: nowrap; }
+.btn svg { width: 18px; height: 18px; flex: none; }
+.btn-primary { background: var(--brand); color: #fff; }
+.btn-primary:hover { background: var(--brand-hover); }
+.btn-ghost { border-color: var(--line); color: var(--ink); background: var(--bg); }
+.btn-ghost:hover { border-color: var(--ink); }
+.btn-sm { padding: 9px 16px; font-size: .9rem; }
+
+/* Header */
+header.site { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: rgba(255,255,255,.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-block: 12px; }
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.logo svg { width: 52px; height: auto; flex: none; }
+.logo-text { display: grid; line-height: 1; }
+.logo-text b { font-family: var(--display); font-weight: 700; font-size: 1.02rem; letter-spacing: .05em; color: var(--brand); }
+.logo-text span { font-family: var(--display); font-weight: 500; font-size: .62rem; letter-spacing: .42em; color: var(--sage); margin-top: 5px; }
+.nav-links { display: flex; gap: 30px; list-style: none; margin: 0; padding: 0; }
+.nav-links a { text-decoration: none; font-weight: 500; font-size: .93rem; color: var(--text); }
+.nav-links a:hover { color: var(--ink); }
+@media (max-width: 900px) { .nav-links { display: none; } }
+@media (max-width: 480px) { .nav .btn { display: none; } }
+
+/* Hero */
+.hero { padding-block: clamp(36px, 6vw, 72px) clamp(56px, 7vw, 88px); }
+.hero-grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(32px, 5vw, 64px); align-items: center; }
+.hero-copy { display: grid; gap: 20px; min-width: 0; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+.hero-img { border-radius: 16px; overflow: hidden; aspect-ratio: 3 / 2; max-width: 100%; background: var(--surface); }
+.hero-img img { width: 100%; height: 100%; object-fit: cover; }
+.hero-facts { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 12px; padding-top: 20px; border-top: 1px solid var(--line); font-size: .9rem; color: var(--text); }
+.hero-facts span { display: inline-flex; align-items: center; gap: 8px; }
+.hero-facts svg { width: 16px; height: 16px; color: var(--sage); flex: none; }
+.hero-facts b { color: var(--ink); font-weight: 600; }
+@media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; } .hero-img { order: -1; aspect-ratio: 16 / 10; } }
+
+/* Services */
+.service-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+@media (max-width: 1000px) { .service-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .service-grid { grid-template-columns: 1fr; } }
+.service { background: var(--bg); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; display: flex; flex-direction: column; }
+.service-img { aspect-ratio: 4 / 3; background: var(--surface); }
+.service-img img { width: 100%; height: 100%; object-fit: cover; }
+.service-body { padding: 20px 20px 22px; display: grid; gap: 10px; align-content: start; }
+.service p { font-size: .94rem; }
+.service ul { margin: 2px 0 0; padding: 14px 0 0; border-top: 1px solid var(--line); list-style: none; display: grid; gap: 6px; font-size: .89rem; color: var(--muted); }
+.service li { display: flex; gap: 8px; align-items: baseline; }
+.service li::before { content: ""; width: 10px; height: 6px; border-left: 1.6px solid var(--sage); border-bottom: 1.6px solid var(--sage); transform: rotate(-45deg) translateY(-3px); flex: none; }
+.scope-note { margin-top: 28px; font-size: .9rem; color: var(--muted); }
+
+/* Why */
+.why-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(32px, 5vw, 72px); align-items: start; }
+@media (max-width: 860px) { .why-grid { grid-template-columns: 1fr; } }
+.why-intro { display: grid; gap: 28px; min-width: 0; }
+.why-img { border-radius: var(--r); overflow: hidden; aspect-ratio: 3 / 2; max-width: 100%; background: var(--surface); }
+.why-img img { width: 100%; height: 100%; object-fit: cover; }
+.values { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
+.value { background: var(--bg); padding: 24px; display: grid; gap: 6px; align-content: start; }
+.value p { font-size: .93rem; }
+.value.wide { grid-column: 1 / -1; }
+@media (max-width: 560px) { .values { grid-template-columns: 1fr; } }
+
+/* How */
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; list-style: none; margin: 0; padding: 0; counter-reset: s; }
+@media (max-width: 900px) { .steps { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .steps { grid-template-columns: 1fr; gap: 24px; } }
+.steps li { counter-increment: s; display: grid; gap: 8px; align-content: start; }
+.steps li::before { content: counter(s); width: 36px; height: 36px; border-radius: 50%; border: 1.5px solid var(--brand); color: var(--brand); font-family: var(--display); font-weight: 600; display: grid; place-items: center; margin-bottom: 6px; }
+.steps p { font-size: .94rem; }
+
+/* Pricing */
+.price-card { display: grid; grid-template-columns: auto 1fr auto; gap: clamp(24px, 4vw, 56px); align-items: center; padding: clamp(28px, 4vw, 44px); border: 1px solid var(--line); border-radius: 16px; }
+.price { display: grid; gap: 2px; }
+.price small { font-family: var(--display); font-size: .8rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.price strong { font-family: var(--display); font-size: clamp(2.6rem, 6vw, 3.6rem); font-weight: 700; color: var(--brand); line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.price-copy { display: grid; gap: 8px; min-width: 0; }
+.price-copy ul { margin: 6px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px 20px; font-size: .9rem; color: var(--muted); }
+@media (max-width: 860px) { .price-card { grid-template-columns: 1fr; } .price-card .btn { justify-self: start; } }
+
+/* Areas */
+.areas { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; padding: clamp(28px, 4vw, 44px); border: 1px solid var(--line); border-radius: 16px; }
+@media (max-width: 820px) { .areas { grid-template-columns: 1fr; } }
+.area-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+.area-tags span { border: 1px solid var(--line); color: var(--ink); font-weight: 500; font-size: .9rem; padding: 8px 16px; border-radius: 999px; }
+
+/* FAQ */
+.faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(32px, 5vw, 72px); align-items: start; }
+@media (max-width: 860px) { .faq-grid { grid-template-columns: 1fr; } }
+.faq { border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 19px; font-family: var(--display); font-weight: 600; font-size: 1.03rem; color: var(--ink); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font-size: 1.4rem; font-weight: 400; color: var(--muted); line-height: 1; transition: transform .2s; flex: none; }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { padding-bottom: 20px; max-width: 62ch; font-size: .96rem; }
+
+/* Contact CTA */
+.cta { padding-top: 0; }
+.cta-card { background: var(--brand); border-radius: 18px; padding: clamp(32px, 5vw, 60px); display: grid; grid-template-columns: 1.2fr .8fr; gap: 32px; align-items: center; }
+.cta-card h2 { color: #fff; }
+.cta-card > div > p { color: rgba(255,255,255,.78); margin-top: 12px; max-width: 50ch; }
+.cta-card .btn-primary { background: #fff; color: var(--brand); margin-top: 24px; }
+.cta-card .btn-primary:hover { background: #eef2ef; }
+.contact-list { display: grid; gap: 0; border-top: 1px solid rgba(255,255,255,.18); }
+.contact-item { display: grid; gap: 2px; padding-block: 16px; border-bottom: 1px solid rgba(255,255,255,.18); min-width: 0; }
+.contact-item small { font-size: .74rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.6); }
+.contact-item a, .contact-item span { font-family: var(--display); font-weight: 600; font-size: 1.15rem; color: #fff; text-decoration: none; overflow-wrap: anywhere; }
+.contact-item a:hover { text-decoration: underline; }
+@media (max-width: 820px) { .cta-card { grid-template-columns: 1fr; } }
+
+/* Footer */
+footer { border-top: 1px solid var(--line); background: var(--surface); padding-block: 48px 36px; font-size: .92rem; }
+.foot-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 36px; align-items: start; }
+@media (max-width: 720px) { .foot-grid { grid-template-columns: 1fr; } }
+.foot-logo { width: 220px; max-width: 100%; height: auto; }
+footer h3 { font-size: .76rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; font-weight: 600; }
+footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+footer li { overflow-wrap: anywhere; }
+footer a { text-decoration: none; }
+footer a:hover { color: var(--ink); text-decoration: underline; }
+.foot-base { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; color: var(--muted); font-size: .84rem; }
+
+/* Sticky mobile bar */
+.callbar { display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; padding: 12px max(16px, env(safe-area-inset-right, 0px)) calc(12px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); background: rgba(255,255,255,.96); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-top: 1px solid var(--line); }
+.callbar .btn { width: 100%; }
+@media (max-width: 720px) { .callbar { display: block; } footer { padding-bottom: 110px; } }
+</style>
+<style>html,body{margin:0}[hidden]{display:none!important}</style>
+</head>
+<body>
+
+<!-- Contact details. WhatsApp links use the international format (27 + number without the leading 0). -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.2a9.7 9.7 0 0 0-8.3 14.8L2.4 21.6l4.7-1.2A9.8 9.8 0 1 0 12 2.2Zm0 17.8a8 8 0 0 1-4.2-1.2l-.3-.2-2.8.7.8-2.7-.2-.3A8 8 0 1 1 12 20Zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2c0 1.2.9 2.4 1 2.6.1.1 1.7 2.7 4.2 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3Z"/></symbol>
+</svg>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Clean Living Services home">
+      <svg viewBox="90 95 760 365" aria-hidden="true">
+        <g stroke="#173F35" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <path d="M160 320 L450 105 L740 320"/>
+          <path d="M610 225 L610 115 L670 115 L670 270" stroke-width="30"/>
+        </g>
+        <g fill="#173F35">
+          <rect x="410" y="240" width="42" height="42" rx="5"/><rect x="464" y="240" width="42" height="42" rx="5"/>
+          <rect x="410" y="294" width="42" height="42" rx="5"/><rect x="464" y="294" width="42" height="42" rx="5"/>
+        </g>
+        <path d="M100 440 C260 335 420 380 560 415 C640 435 710 440 790 408 C700 465 585 447 470 422 C330 390 205 410 100 440 Z" fill="#7B927F"/>
+        <path d="M770 290 C788 290 795 265 802 235 C809 265 816 290 834 290 C816 297 809 322 802 352 C795 322 788 297 770 290 Z" fill="#7B927F"/>
+      </svg>
+      <span class="logo-text"><b>CLEAN LIVING</b><span>SERVICES</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-primary btn-sm js-wa" href="https://wa.me/27729752801" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>WhatsApp us</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Residential cleaning · Cape Town</span>
+        <h1>A cleaner home. A better everyday.</h1>
+        <p class="lede">Enjoy a fresher, tidier home with Clean Living Services. We provide practical residential cleaning so you can spend less time on housework and more time enjoying your space.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary js-wa" href="https://wa.me/27729752801" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Get a quote on WhatsApp</a>
+          <a class="btn btn-ghost" href="#services">Explore our services</a>
+        </div>
+        <div class="hero-facts">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/></svg>Cleans from <b>R450</b></span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>Cape Town and surrounds</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg>Quick quotes on WhatsApp</span>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="images/hero.jpg?v=2" alt="A bright, tidy apartment living room with blue sofas, a wooden table and a window view of Table Mountain" width="1170" height="776">
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Our services</span>
+        <h2>Everyday cleaning for every room</h2>
+        <p class="lede">Routine residential cleaning with standard household tools and supplies, to keep your home fresh, neat and comfortable.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service">
+          <div class="service-img"><img src="images/general.jpg" alt="A gloved hand wiping a wooden shelf with a microfibre cloth" loading="lazy" style="object-position: 30% 50%"></div>
+          <div class="service-body">
+            <h3>General home cleaning</h3>
+            <p>Routine cleaning to keep your living spaces fresh and neat.</p>
+            <ul><li>Dusting</li><li>Wiping accessible surfaces</li><li>Tidying and general room cleaning</li></ul>
+          </div>
+        </article>
+        <article class="service">
+          <div class="service-img"><img src="images/kitchen-action.jpg" alt="Gloved hands spraying and wiping a stone kitchen counter" loading="lazy"></div>
+          <div class="service-body">
+            <h3>Kitchen cleaning</h3>
+            <p>Everyday cleaning of kitchen surfaces and accessible areas.</p>
+            <ul><li>Wiping counters</li><li>Cleaning the sink</li><li>Wiping cabinet exteriors</li></ul>
+          </div>
+        </article>
+        <article class="service">
+          <div class="service-img"><img src="images/bathroom.jpg" alt="A clean white basin with a spray bottle, scrub brush and folded cloth on the vanity" loading="lazy"></div>
+          <div class="service-body">
+            <h3>Bathroom cleaning</h3>
+            <p>Routine cleaning of bathroom fixtures and accessible surfaces.</p>
+            <ul><li>Basin and toilet</li><li>Mirrors</li><li>Shower surfaces</li></ul>
+          </div>
+        </article>
+        <article class="service">
+          <div class="service-img"><img src="images/bedroom.jpg" alt="A neatly made bed with white linen and a folded throw" loading="lazy"></div>
+          <div class="service-body">
+            <h3>Bedrooms and living areas</h3>
+            <p>Keep bedrooms and shared spaces organised and presentable.</p>
+            <ul><li>Dusting and tidying</li><li>Making beds, when agreed</li></ul>
+          </div>
+        </article>
+      </div>
+      <p class="scope-note">We focus on everyday residential cleaning. We'll confirm exactly what's included in your visit when you message us.</p>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="wrap why-grid">
+      <div class="why-intro">
+        <div class="section-head" style="margin-bottom:0">
+          <span class="eyebrow">Why choose us</span>
+          <h2>A team you can welcome into your home</h2>
+          <p class="lede">Letting someone clean your home takes trust. Here is what we commit to on every visit.</p>
+        </div>
+        <div class="why-img"><img src="images/supplies.jpg" alt="Spray bottles, a scrub brush, microfibre cloths and rubber gloves on a sunlit kitchen counter" loading="lazy"></div>
+      </div>
+      <div class="values">
+        <div class="value"><h3>Reliability</h3><p>We respect your time and your home, and arrive when we say we will.</p></div>
+        <div class="value"><h3>Care</h3><p>We treat every home with consideration, as if it were our own.</p></div>
+        <div class="value"><h3>Quality</h3><p>Consistent, thorough everyday cleaning, visit after visit.</p></div>
+        <div class="value"><h3>Clear pricing</h3><p>You'll know what's included and what it costs before we start.</p></div>
+        <div class="value wide"><h3>Professionalism</h3><p>A courteous, organised experience from your first message to the final wipe-down.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2>Booking takes one message</h2>
+        <p class="lede">No forms or accounts. Tell us about your home on WhatsApp and we'll take it from there.</p>
+      </div>
+      <ol class="steps">
+        <li><h3>Message us</h3><p>Send us a WhatsApp on 072 975 2801 with a few details about your home.</p></li>
+        <li><h3>Discuss your needs</h3><p>We talk through the rooms, their size and how often you'd like us to come.</p></li>
+        <li><h3>Receive a quote</h3><p>You get a clear price based on the size of your home before anything is booked.</p></li>
+        <li><h3>Arrange a visit</h3><p>We agree on a date and time that suits you and confirm the details.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <div class="price-card">
+        <div class="price">
+          <small>Cleans from</small>
+          <strong>R450</strong>
+        </div>
+        <div class="price-copy">
+          <h2>Simple pricing, based on your home</h2>
+          <p>Your price depends on the size of the rooms you'd like cleaned. Send us a WhatsApp with a few details and we'll give you an exact quote before booking.</p>
+          <ul><li>No hidden costs</li><li>Quoted before we book</li><li>Priced by room size</li></ul>
+        </div>
+        <a class="btn btn-primary js-wa" href="https://wa.me/27729752801" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Get my quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="areas" style="padding-top:0">
+    <div class="wrap">
+      <div class="areas">
+        <div class="section-head" style="margin-bottom:0">
+          <span class="eyebrow">Areas we serve</span>
+          <h2>Cape Town and surrounding suburbs</h2>
+          <p class="lede">Not sure if we reach your area? Send us a WhatsApp and we'll let you know straight away.</p>
+        </div>
+        <div class="area-tags">
+          <span>Cape Town</span>
+          <span>Surrounding suburbs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="padding-top:0">
+    <div class="wrap faq-grid">
+      <div class="section-head" style="margin-bottom:0">
+        <span class="eyebrow">Questions</span>
+        <h2>Frequently asked questions</h2>
+        <p class="lede">Anything else on your mind? Ask us on WhatsApp.</p>
+      </div>
+      <div class="faq">
+        <details><summary>How much does a clean cost?</summary><p>Cleans start from R450. The final price depends on the size of the rooms you'd like cleaned. WhatsApp us on 072 975 2801 with a few details and we'll send you a clear quote before booking.</p></details>
+        <details><summary>How do I book?</summary><p>Send us a WhatsApp on 072 975 2801, or email Cleanlivingcpt8001@gmail.com. We'll confirm your quote, then arrange a date and time that suits you.</p></details>
+        <details><summary>Do I need to provide cleaning supplies?</summary><p>We'll confirm who provides the household cleaning products and tools when you book, so there are no surprises on the day.</p></details>
+        <details><summary>What's included in a standard clean?</summary><p>Everyday residential cleaning: dusting, wiping accessible surfaces, kitchens, bathrooms, bedrooms and living areas. We'll agree on the exact scope with you before your visit.</p></details>
+        <details><summary>Do you offer deep or specialist cleaning?</summary><p>Not at the moment. We focus on everyday home cleaning and don't currently offer carpet or upholstery cleaning, pressure washing, post-construction or specialist deep cleaning.</p></details>
+        <details><summary>Which areas do you cover?</summary><p>We serve Cape Town and nearby suburbs. If you're unsure whether we reach you, just ask.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="wrap">
+      <div class="cta-card">
+        <div>
+          <h2>Ready for a fresher home?</h2>
+          <p>Message us on WhatsApp to talk through your cleaning needs, get a quote and book your first visit.</p>
+          <a class="btn btn-primary js-wa" href="https://wa.me/27729752801" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Chat on WhatsApp</a>
+        </div>
+        <div class="contact-list">
+          <div class="contact-item"><small>WhatsApp</small><a class="js-wa" href="https://wa.me/27729752801" target="_blank" rel="noopener">072 975 2801</a></div>
+          <div class="contact-item"><small>Email</small><a href="mailto:Cleanlivingcpt8001@gmail.com">Cleanlivingcpt8001@gmail.com</a></div>
+          <div class="contact-item"><small>Based in</small><span>Cape Town, South Africa</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><img class="foot-logo" src="images/logo-full.svg" alt="Clean Living Services: A cleaner home. A better everyday." width="1600" height="1100"></div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a class="js-wa" href="https://wa.me/27729752801" target="_blank" rel="noopener">WhatsApp: 072 975 2801</a></li>
+          <li><a href="mailto:Cleanlivingcpt8001@gmail.com">Cleanlivingcpt8001@gmail.com</a></li>
+          <li>Cape Town, South Africa</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© <span id="yr">2026</span> Clean Living Services</span>
+      <span>Residential cleaning · Cape Town</span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-primary js-wa" href="https://wa.me/27729752801" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>WhatsApp for a quote</a>
+</div>
+
+<script>
+(function () {
+  var msg = encodeURIComponent("Hi Clean Living Services, I'd like a quote for a home clean.");
+  document.querySelectorAll(".js-wa").forEach(function (el) { el.href = "https://wa.me/27729752801?text=" + msg; });
+  document.getElementById("yr").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
